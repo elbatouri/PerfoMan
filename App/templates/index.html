@@ -1,0 +1,12 @@
+{% block content %}
+    <h1 class="text-center">Welcome to the Maintenance App</h1>
+    <p class="text-center">Manage your maintenance tasks efficiently.</p>
+
+    {% for intervention in interventions %}
+        <div>
+            <h2>{{ intervention.maintenanceType }}</h2>
+            <p>{{ intervention.description }}</p>
+            <button class="delete-intervention-btn" data-intervention-id="{{ intervention.id }}" data-intervention-name="{{ intervention.maintenanceType }}">Delete</button>
+        </div>
+    {% endfor %}
+{% endblock %}
