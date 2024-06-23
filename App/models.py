@@ -89,5 +89,5 @@ class CheckList(db.Model):
     AX2 = db.Column(db.Float, nullable=False)
     AX3 = db.Column(db.Float, nullable=False)
     AX4 = db.Column(db.Float, nullable=False)
-    bruit = db.Column(db.boolean, nullable=False)
+    bruit = db.Column(db.Boolean, nullable=False)
     
